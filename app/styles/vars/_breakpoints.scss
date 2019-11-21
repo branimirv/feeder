@@ -1,0 +1,13 @@
+/**
+* Sass Media Query breakpoints
+*/
+$mq-breakpoints: (
+  mobile: 320px,
+  tablet: 740px,
+  desktop: 980px,
+  container: 1100px,
+  wide: 1300px,
+  // Tweakpoints
+    desktopAd: 810px,
+  mobileLandscape: 480px
+);

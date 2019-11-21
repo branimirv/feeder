@@ -1,0 +1,105 @@
+/**
+ * Headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: $font-sans-secondary;
+  font-weight: $type-weight-extra-bold;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4,
+h5,
+h6 {
+}
+
+/**
+  * Paragraphs
+  */
+p {
+  margin: 0;
+}
+
+/**
+  * Lists (ol, ul, dd)
+  */
+ol,
+ul,
+dl {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ol {
+}
+ol li {
+}
+ul {
+}
+ul li {
+}
+dd {
+}
+dl dt {
+}
+dl dd {
+}
+
+/**
+  * Anchors
+  */
+a {
+  color: $color-text;
+  text-decoration: none;
+}
+a:link {
+}
+a:hover {
+  // color: $color-text;
+}
+a:focus {
+  outline: 0;
+  // color: $color-text;
+}
+// a:visited {
+//     color: $color-secondary;
+// }
+
+/**
+  * Typographic details
+  */
+hr {
+}
+em {
+}
+b,
+strong {
+  font-weight: bold;
+}
+address {
+}
+small {
+}
+pre {
+}
+code {
+}
+sub {
+}
+sup {
+}
+strike {
+}

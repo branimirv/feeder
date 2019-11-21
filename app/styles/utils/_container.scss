@@ -1,0 +1,19 @@
+.container {
+  margin: 0 auto;
+  max-width: calc(1100px - #{$unit} * 6);
+  width: 100%;
+
+  @media (max-width: 1100px) {
+    padding: 0 calc(#{$unit} * 3);
+    max-width: calc(100% - #{$unit} * 6);
+  }
+  /*make container stretch from one side to another*/
+  &--fluid {
+    margin: 0;
+    width: 100%;
+  }
+
+  &--sml {
+    max-width: 730px;
+  }
+}

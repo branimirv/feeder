@@ -1,0 +1,51 @@
+/*------------------------------------*\
+    # vars.colors
+\*------------------------------------*/
+
+/**
+* Generic colors
+* Color naming taken from: http://www.color-blindness.com/color-name-hue/
+*/
+
+/**
+* Brand colors
+*/
+$white: #ffffff;
+$black: #231f20;
+$black-dark: #000105;
+$blue: #2eacc0;
+$blue-dark: #1b7887;
+$green: #41af5c;
+$red: #f27052;
+$orange: #e19f4d;
+
+/**
+* Global text color
+*/
+$color-text: $black;
+
+/**
+* Background color
+*/
+$color-background: $white;
+
+/**
+* Theme colors
+*/
+$color-primary: $blue;
+$color-secondary: $black;
+
+/**
+* Grey colors
+*/
+
+$grey: rgba($black, 0.04);
+$grey-light: rgba($black, 0.08);
+$grey-lighter: #c0c0c0;
+
+/**
+* Utility colors
+*/
+$color-warning: #f44336;
+$color-success: #4caf50;
+$color-note: #ffeb3b;
