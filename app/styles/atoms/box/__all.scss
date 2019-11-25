@@ -1,0 +1,45 @@
+.box {
+  background-color: rgba(63, 80, 98, 0.9);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: $type-medium-large;
+    line-height: 1.15;
+    font-weight: $type-weight-semi-bold;
+    color: $white;
+    margin-bottom: calc(#{$unit} * 4);
+    letter-spacing: 5.56px;
+    text-transform: uppercase;
+
+    @include mq($until: desktop) {
+      font-size: $type-base;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    font-family: $font-sans-primary;
+    font-size: $type-medium-large;
+    line-height: 1.5;
+    font-weight: $type-weight-light;
+    color: $white;
+    margin-bottom: calc(#{$unit} * 5);
+
+    @include mq($until: desktop) {
+      font-size: $type-base;
+      text-align: center;
+    }
+  }
+
+  hr {
+    height: 1px;
+    width: 90px;
+    border: none;
+    background-color: $white;
+  }
+}

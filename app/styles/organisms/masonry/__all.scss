@@ -18,6 +18,14 @@
     }
     &:nth-child(2) {
       @include aspect-ratio(400, 500);
+      background-color: #d0d0d0;
+      .image-container {
+        padding: calc(#{$unit} * 6) calc(#{$unit} * 4 + 2px);
+
+        @include mq($until: desktop) {
+          padding: calc(#{$unit} * 2);
+        }
+      }
     }
     &:nth-child(3) {
       @include aspect-ratio(400, 300);
