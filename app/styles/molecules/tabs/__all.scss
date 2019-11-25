@@ -3,6 +3,13 @@
   justify-content: center;
   margin-bottom: calc(#{$unit} * 15);
 
+  @include mq($until: desktop) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: calc(#{$unit} * 6);
+  }
+
   &__item {
     position: relative;
     cursor: pointer;
@@ -12,6 +19,12 @@
     font-weight: $type-weight-bold;
     text-transform: uppercase;
     letter-spacing: 3.4px;
+
+    @include mq($until: desktop) {
+      margin-bottom: calc(#{$unit} * 8);
+      width: 33%;
+      text-align: center;
+    }
 
     &.active {
       &::after {
@@ -40,6 +53,14 @@
     }
     &:not(:last-child) {
       margin-right: calc(#{$unit} * 13);
+
+      @include mq($until: desktop) {
+        margin-right: 0;
+      }
     }
+  }
+  @include mq($until: desktop) {
+    flex-wrap: wrap;
+    width: 100%;
   }
 }

@@ -9,6 +9,9 @@
       background-position: center;
       background-repeat: no-repeat;
     }
+    @include mq($until: desktop) {
+      width: 100%;
+    }
   }
 
   &__container {
@@ -19,6 +22,13 @@
     transform: translateY(-50%);
     display: flex;
     justify-content: flex-end;
+
+    @include mq($until: desktop) {
+      position: relative;
+      top: 0;
+      transform: none;
+      padding-top: calc(#{$unit} * 12);
+    }
   }
 
   &__text {
@@ -28,10 +38,21 @@
     @include mq($until: container) {
       max-width: 400px;
     }
+
+    @include mq($until: desktop) {
+      max-width: 100%;
+    }
   }
 
   &__title {
     margin-bottom: calc(#{$unit} * 10);
+    font-size: $type-xxlarge;
+    line-height: 1.5;
+
+    @include mq($until: desktop) {
+      margin-bottom: calc(#{$unit} * 5);
+      font-size: $type-large;
+    }
   }
 
   &__description {
@@ -42,6 +63,10 @@
 
       &:not(:last-child) {
         margin-bottom: calc(#{$unit} * 4);
+
+        @include mq($until: desktop) {
+          margin-bottom: calc(#{$unit} * 2);
+        }
       }
     }
   }

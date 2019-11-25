@@ -1,5 +1,12 @@
 .menu-link {
   display: none;
+  position: relative;
+  z-index: 999;
+  color: $white;
+  text-transform: uppercase;
+  font-size: $type-medium;
+  font-weight: $type-weight-bold;
+  letter-spacing: 3.6px;
 
   @include mq($until: desktop) {
     display: block;
