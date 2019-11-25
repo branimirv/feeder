@@ -1,0 +1,48 @@
+.nav {
+  ul {
+    display: flex;
+
+    li {
+      &.active {
+        a {
+          &::after {
+            content: "";
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            bottom: calc(-#{$unit} * 2);
+            left: 0;
+            right: 0;
+            background-color: $white;
+          }
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: calc(#{$unit} * 6 + 1px);
+      }
+
+      a {
+        font-size: $type-xsmall;
+        line-height: 2;
+        letter-spacing: 3.4px;
+        color: $white;
+        text-transform: uppercase;
+        position: relative;
+
+        &:hover {
+          &::after {
+            content: "";
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            bottom: calc(-#{$unit} * 2);
+            left: 0;
+            right: 0;
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+}

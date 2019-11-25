@@ -1,0 +1,48 @@
+.introduction {
+  position: relative;
+  &__image {
+    width: 50%;
+    @include aspect-ratio(800, 685);
+
+    .image-container {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 493px;
+
+    @include mq($until: container) {
+      max-width: 400px;
+    }
+  }
+
+  &__title {
+    margin-bottom: calc(#{$unit} * 10);
+  }
+
+  &__description {
+    p {
+      font-size: $type-base;
+      line-height: 2;
+      font-weight: $type-weight-light;
+
+      &:not(:last-child) {
+        margin-bottom: calc(#{$unit} * 4);
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.icon {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+
+  &__arrow {
+    &--down {
+      background-image: url("../images/icons/arrow-down.svg");
+      width: 30px;
+      height: 32px;
+    }
+  }
+}

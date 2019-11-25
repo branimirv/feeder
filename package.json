@@ -4,7 +4,9 @@
     "node": ">=4"
   },
   "dependencies": {
+    "isotope-layout": "^3.0.6",
     "jquery": "^3.4.1",
+    "masonry-layout": "^4.2.2",
     "normalize.css": "^8.0.1",
     "sass-mq": "^5.0.1"
   },

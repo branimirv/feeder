@@ -1,0 +1,45 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: calc(#{$unit} * 15);
+
+  &__item {
+    position: relative;
+    cursor: pointer;
+    color: $blue;
+    font-size: $type-xsmall;
+    line-height: 1;
+    font-weight: $type-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 3.4px;
+
+    &.active {
+      &::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        bottom: calc(-#{$unit} * 2);
+        left: 0;
+        right: 0;
+        background-color: $blue;
+      }
+    }
+
+    &:hover {
+      &::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        bottom: calc(-#{$unit} * 2);
+        left: 0;
+        right: 0;
+        background-color: $blue;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: calc(#{$unit} * 13);
+    }
+  }
+}

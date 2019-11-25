@@ -6,7 +6,7 @@
  * Project base line height (unitless in order to work with typomatic)
  */
 $base-line-height: 24px;
-$base-font-size: 16px;
+$base-font-size: 15px;
 
 /**
     * Type scale sizes must be entered in their pixel size
@@ -14,15 +14,15 @@ $base-font-size: 16px;
     * Default type scale ratio: 1.333;
     */
 $type-tiny: 10px;
-$type-xsmall: 12px;
+$type-xsmall: 11px;
 $type-small: 14px;
 $type-base: $base-font-size;
-$type-medium: 18px;
+$type-medium: 16px;
 $type-medium-large: 20px;
 $type-large: 24px;
 $type-xlarge: 28px;
 $type-xxlarge: 32px;
-$type-xxxlarge: 48px;
+$type-xxxlarge: 40px;
 $type-huge: 56px;
 
 /**

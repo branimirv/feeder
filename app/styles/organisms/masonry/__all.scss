@@ -1,0 +1,55 @@
+.masonry {
+  &__item {
+    width: 25%;
+
+    &.hidden {
+      display: none;
+    }
+    &:nth-child(1) {
+      @include aspect-ratio(400, 400);
+    }
+    &:nth-child(2) {
+      @include aspect-ratio(400, 500);
+    }
+    &:nth-child(3) {
+      @include aspect-ratio(400, 300);
+    }
+    &:nth-child(4) {
+      @include aspect-ratio(400, 400);
+    }
+    &:nth-child(5) {
+      @include aspect-ratio(400, 400);
+    }
+    &:nth-child(6) {
+      @include aspect-ratio(400, 300);
+    }
+    &:nth-child(7) {
+      @include aspect-ratio(400, 500);
+    }
+    &:nth-child(8) {
+      @include aspect-ratio(400, 400);
+    }
+    &:nth-child(9) {
+      @include aspect-ratio(400, 400);
+    }
+    &:nth-child(10) {
+      @include aspect-ratio(400, 500);
+    }
+    &:nth-child(11) {
+      @include aspect-ratio(400, 300);
+    }
+    &:nth-child(12) {
+      @include aspect-ratio(400, 400);
+    }
+
+    .image-container {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__sizer {
+    width: 25%;
+  }
+}

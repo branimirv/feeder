@@ -1,0 +1,43 @@
+.button {
+  /**
+     * Button base
+     */
+  display: inline-block;
+  vertical-align: middle;
+
+  touch-action: manipulation;
+  user-select: none;
+
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  text-align: center;
+  border: 0;
+
+  &:focus {
+    outline: 0;
+  }
+
+  /**
+       * Button base project styling
+       */
+  font-family: $font-sans-secondary;
+  font-weight: $type-weight-bold;
+  text-transform: none;
+  letter-spacing: 0em;
+
+  &--primary {
+    border: 2px solid $blue-dark;
+    background-color: transparent;
+    color: $blue;
+    transition: all 0.2s ease;
+    padding: calc(#{$unit} * 4) calc(#{$unit} * 10);
+    font-size: $type-xsmall;
+    line-height: 1;
+
+    &:hover {
+      background-color: $blue-dark;
+      color: $white;
+    }
+  }
+}

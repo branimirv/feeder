@@ -1,0 +1,7 @@
+.menu-link {
+  display: none;
+
+  @include mq($until: desktop) {
+    display: block;
+  }
+}

@@ -1,0 +1,18 @@
+.about {
+  padding: calc(#{$unit} * 18 + 2px) 0 calc(#{$unit} * 23 + 2px) 0;
+
+  &__title {
+    margin-bottom: calc(#{$unit} * 10);
+    text-align: center;
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: $type-base;
+    line-height: 2;
+    font-weight: $type-weight-light;
+  }
+}
