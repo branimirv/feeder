@@ -1,6 +1,6 @@
 # Feeder
 
-## Instalation
+## Installation
 
 After cloning this repo, in root folder run:
 
