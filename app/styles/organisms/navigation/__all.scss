@@ -41,6 +41,33 @@
 
       &:not(:last-child) {
         margin-right: calc(#{$unit} * 6 + 1px);
+
+        @include mq($until: desktop) {
+          margin-right: 0;
+        }
+
+        a {
+          &:hover {
+            &::after {
+              content: "";
+              height: 2px;
+              width: 100%;
+              position: absolute;
+              bottom: calc(-#{$unit} * 2);
+              left: 0;
+              right: 0;
+              background-color: $white;
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        margin-left: calc(#{$unit} * 10 + 2px);
+
+        @include mq($until: desktop) {
+          margin-left: 0;
+        }
       }
 
       a {
@@ -50,19 +77,6 @@
         color: $white;
         text-transform: uppercase;
         position: relative;
-
-        &:hover {
-          &::after {
-            content: "";
-            height: 2px;
-            width: 100%;
-            position: absolute;
-            bottom: calc(-#{$unit} * 2);
-            left: 0;
-            right: 0;
-            background-color: $white;
-          }
-        }
       }
 
       @include mq($until: desktop) {
